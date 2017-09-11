@@ -65,7 +65,7 @@ input.ng-invalid {
 	<form class="form-horizantal" id="myform">
 		<fieldset>
 			<legend>Fill Form</legend>
-	<div class="form-group">
+		<div class="form-group">
 		<label for="inputEmail" class="col-md-2 control-label">FirstName</label>
 		<div class="col-md-6">
 			<input type="text" name="fname" class="form-control" id="fname">
@@ -79,9 +79,7 @@ input.ng-invalid {
 	</div>
 	<div class="form-group">
 		<label for="inputPassword" class="col-lg-2 control-label">Password</label>
-		<div class="col-lg-10">
-			<input type="password" name="password" class="form-control"
-				id="password">
+		<div class="col-lg-10">	<input type="password" name="password" class="form-control"	id="password">
 		</div>
 	</div>
 	<div class="form-group">
