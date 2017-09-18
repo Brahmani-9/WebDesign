@@ -22,18 +22,21 @@
 	var app = angular.module("registration", []);
 	app.controller("myCtrl", function($scope) {
 		$("#submit").click(function() {
-			 var fname= $("#fname").val();
+		/* 	var fname= $("#fname").val();
 			var lname= $("#lname").val();
 			var email= $("#email").val();
 			var phone= $("#phone").val();
 			var address= $("#address").val();
 			var gender= $("#gender").val();
 			var dataString = $("#myform").serialize();
-			if(fname == '' ||lname == '' ||email == '' ||phone == '' ||address == '' ||gender == '' ){
+			if(fname == '' ){
 				$('msg').html("please fill details");
+			}  */
+			if ($scope.myform.$valid) {
+				alert('our form is amazing');
 			}
 			else{
-				$.ajax(){
+				/* $.ajax({
 					type: 'POST',
 					url: 'Nviera.jsp',
 					data: dataString,
@@ -45,9 +48,9 @@
 						var email= $("#email").val("");
 						var phone= $("#phone").val("");
 						var address= $("#address").val("");
-						var gender= $("#gender").val();
+						var gender= $("#gender").val("");
 					}
-				};
+				}); */
 			}
 				return false;
  	});
@@ -62,7 +65,7 @@ input.ng-invalid {
 </head>
 <body data-ng-controller="myCtrl">
 	<div class="container">
-	<form class="form-horizantal" id="myform">
+	<form class="form-horizantal" id="myform" data-ng-submit="submitForm()">
 		<fieldset>
 			<legend>Fill Form</legend>
 		<div class="form-group">
@@ -109,13 +112,14 @@ input.ng-invalid {
 			<div class="radio">
 				<label><input type="radio" name="genders" id="genders" value="Male" checked>Female </label>
 			</div>
-			<span id="msg"></span>
+			<span id="msg">
 			<div class="form-group">
 			   <div class="col-lg-10 col-lg-offset-2">
 				<button type="submit" id="submit" name="submit" class="btn btn-primary">Submit</button>
 				<button type="reset" class="btn btn-default">Reset</button>
 			</div>
-		</div></div>
+		</div></span>
+		</div>
 	</div>
 	</fieldset></form>
 	</div>

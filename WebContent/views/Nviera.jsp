@@ -5,12 +5,13 @@
 <head>
 <title>Nviera</title>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script>
 <script type="text/javascript" src="../js/angular.js"></script>
 <script type="text/javascript" src="../js/angular.min.js"></script>
 <script type="text/javascript" src="../js/angular-cookies.js"></script>
 <script type="text/javascript" src="../js/angular-resource.js"></script>
 <script type="text/javascript" src="../js/angular-route.js"></script>
-<script type="text/javascript" src="../js/jquery-3.1.0.min.js"></script>
+
 
 <script type="text/javascript" src="../js/bootstrap.js"></script>
 <script type="text/javascript" src="../js/bootstrap.min.js"></script>
@@ -24,10 +25,7 @@
 <link rel="stylesheet" href="../css/w3.css">
 <link rel="stylesheet" href="../css/font-awesome.min.css">
 <link rel="stylesheet" href="../css/style.css">
-<link rel="stylesheet"
-	href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet"
-	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 </head>
 <body>
 	<!-- begin navbar -->
@@ -55,17 +53,18 @@
 	
 			<!-- Nviera flash animation -->
 	
-		<div class="container-fluid" style="background-color: rgba(230, 230, 230,0.5)">	
+		<div class="container-fluid" style="background-color: rgba(230, 230, 230,0.5);">	
 				<center class="animated flash infinite" style="font-family: 'Sedgwick Ave Display', cursive; font-size: 30px; color: ;">N V I E R A</center>
 		</div>
 
 	</div>
 	<!-- End navbar -->
-
+	<div>
 	<!-- Home -->
-    
+    <div id="home">
+    <div style="padding-top: 20px;">
     <div class="container" style="background-color: rgba(0, 0, 153,0.4);margin-top: 150px; color: white; margin-bottom: 30px;">
-    		<h5 align="center">WELCOME</h5>
+    		<h5 align="center">WELCOME</h5></div>
     </div>
     
 		<div class="container-fluid">
@@ -78,12 +77,12 @@
 					<br>To help our clients meet their goals through our people, services and solutions.
 				</div>
 		</div>
-		
+		</div>
 	<!-- End home -->
 	
 	<!-- About us -->
-	
-	
+	<div id="about">
+		
 		<div class="container" style="background-color: rgba(0, 0, 153,0.4);margin-top: 500px; color: white;font-size: 15px;">
     		<h5 align="center">ABOUT NVIERA</h5>
     	</div>
@@ -103,8 +102,10 @@
     			<img src="../img/emp1.jpg" style="width:500px;height:400px; " class="img-thumbnail">
     		</div>
 	    </div>
+	    </div>
 	<!-- End About us -->
 	<!-- Products -->
+	<div id="products" style="padding-top: 10px;">
 	<div class="container" style="background-color: rgba(0, 0, 153,0.4);margin-top: 500px; color: white;font-size: 15px;">
     		<h5 align="center">PRODUCTS</h5>
     </div>
@@ -150,24 +151,31 @@
 				<button class="w3-button w3-black w3-margin-bottom"	onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
 			</div>
 		</div>
+		</div>
 	<!-- End Products -->
 	<!-- SERVICES -->
+	<div id="services">
 	<div class="container" style="background-color: rgba(0, 0, 153,0.4);margin-top: 500px; color: white;font-size: 15px;">
     		<h5 align="center">SERVICES</h5>
     </div>
 	<!-- END SERVICES -->
 	<!-- CAREERS -->
+	<div id="careers">
 	<div class="container" style="background-color: rgba(0, 0, 153,0.4);margin-top: 500px; color: white;font-size: 15px;">
     		<h5 align="center">CAREERS</h5>
     </div>
+    </div>
+    </div>
 	<!-- END CAREERS -->
 	<!-- CONTACT US -->
+	<div id="contact">
 	<div class="container" style="background-color: rgba(0, 0, 153,0.4);margin-top: 500px; color: white;font-size: 15px;">
     		<h5 align="center">CONTACT US</h5>
     </div>
+    </div>
 	<!-- END CONTACT US -->
 	
-	
+	</div>
 	</div>
 </body>
 </html>
