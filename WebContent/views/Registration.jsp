@@ -7,38 +7,34 @@
 <script type="text/javascript" src="../js/bootstrap.js"></script>
 <script type="text/javascript" src="../js/bootstrap.min.js"></script>
 
-<link rel="stylesheet" href="../css/bootstrap.css">
-<link rel="stylesheet" href="../css/bootstrap.min.css">
 <script	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 <script type="text/javascript" src="../js/angular.js"></script>
 <script type="text/javascript" src="../js/angular.min.js"></script>
 <script type="text/javascript" src="../js/angular-cookies.js"></script>
 <script type="text/javascript" src="../js/angular-resource.js"></script>
 <script type="text/javascript" src="../js/angular-route.js"></script>
-
+<link rel="stylesheet" href="../css/bootstrap.css">
+<link rel="stylesheet" href="../css/bootstrap.min.css">
 <link rel="stylesheet" href="../css/w3.css">
 <link rel="stylesheet" href="../css/font-awesome.min.css">
 <script type="text/javascript">
 	var app = angular.module("registration", []);
 	app.controller("myCtrl", function($scope) {
 		$("#submit").click(function() {
-		/* 	var fname= $("#fname").val();
+		 	var fname= $("#fname").val();
 			var lname= $("#lname").val();
 			var email= $("#email").val();
 			var phone= $("#phone").val();
 			var address= $("#address").val();
 			var gender= $("#gender").val();
 			var dataString = $("#myform").serialize();
-			if(fname == '' ){
-				$('msg').html("please fill details");
-			}  */
-			if ($scope.myform.$valid) {
-				alert('our form is amazing');
-			}
+			if(fname == '' || lname == '' ||email == '' ||phone == '' ||address == '' ||gender == '' ){
+				alert("please fill details");
+			}  
 			else{
-				/* $.ajax({
+				 $.ajax({
 					type: 'POST',
-					url: 'Nviera.jsp',
+					url: 'RegistrationSave.jsp',
 					data: dataString,
 					cache: false,
 					success: function(response){
@@ -49,12 +45,12 @@
 						var phone= $("#phone").val("");
 						var address= $("#address").val("");
 						var gender= $("#gender").val("");
+						alert(dataString);
 					}
-				}); */
+				}); 
 			}
 				return false;
  	});
-		
 	});
 </script>
 <style>
@@ -65,42 +61,42 @@ input.ng-invalid {
 </head>
 <body data-ng-controller="myCtrl">
 	<div class="container">
-	<form class="form-horizantal" id="myform" data-ng-submit="submitForm()">
+	<form class="form-horizantal" id="myform">
 		<fieldset>
 			<legend>Fill Form</legend>
 		<div class="form-group">
 		<label for="inputEmail" class="col-md-2 control-label">FirstName</label>
 		<div class="col-md-6">
-			<input type="text" name="fname" class="form-control" id="fname">
+			<input type="text" name="fname" class="form-control" id="fname" autofocus="autofocus">
 		</div>
 	</div>
 	<div class="form-group">
 		<label for="inputEmail" class="col-lg-2 control-label">LastName</label>
 		<div class="col-lg-10">
-			<input type="text" name="lname" class="form-control" id="lname">
+			<input type="text" name="lname" class="form-control" id="lname" autofocus="autofocus">
 		</div>
 	</div>
 	<div class="form-group">
 		<label for="inputPassword" class="col-lg-2 control-label">Password</label>
-		<div class="col-lg-10">	<input type="password" name="password" class="form-control"	id="password">
+		<div class="col-lg-10">	<input type="password" name="password" class="form-control"	id="password" autofocus="autofocus">
 		</div>
 	</div>
 	<div class="form-group">
 		<label for="inputEmail" class="col-lg-2 control-label">Email</label>
 		<div class="col-lg-10">
-			<input type="text" name="email" class="form-control" id="email">
+			<input type="text" name="email" class="form-control" id="email" autofocus="autofocus">
 		</div>
 	</div>
 	<div class="form-group">
 		<label for="inputEmail" class="col-lg-2 control-label">Phone</label>
 		<div class="col-lg-10">
-			<input type="text" name="phone" class="form-control" id="phone">
+			<input type="text" name="phone" class="form-control" id="phone" autofocus="autofocus">
 		</div>
 	</div>
 	<div class="form-group">
 		<label for="textArea" class="col-lg-2 control-label">Address</label>
 		<div class="col-lg-10">
-			<textarea name="address" class="form-control" id="address">	</textarea>
+			<textarea name="address" class="form-control" id="address"  autofocus="autofocus">	</textarea>
 		</div>
 	</div>
 	<div class="form-group">
@@ -115,7 +111,7 @@ input.ng-invalid {
 			<span id="msg">
 			<div class="form-group">
 			   <div class="col-lg-10 col-lg-offset-2">
-				<button type="submit" id="submit" name="submit" class="btn btn-primary">Submit</button>
+				<button type="submit" id="submit" name="submit" class="btn btn-primary" >Submit</button>
 				<button type="reset" class="btn btn-default">Reset</button>
 			</div>
 		</div></span>
