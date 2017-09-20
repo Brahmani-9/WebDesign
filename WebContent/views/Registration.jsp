@@ -28,10 +28,25 @@
 			var address= $("#address").val();
 			var gender= $("#gender").val();
 			var dataString = $("#myform").serialize();
-			if(fname == '' || lname == '' ||email == '' ||phone == '' ||address == '' ||gender == '' ){
-				alert("please fill details");
-			}  
-			else{
+			if(fname == '' || fname == null ){
+				alert("Enter First Name..");
+				$("#fname").focus();
+			}else if(lname == ''|| lname == null ){
+				alert("Enter Last Name..");
+				$("#lname").focus();
+			}else if(email == ''|| email == null){
+				alert("Enter Email..");
+				$("#email").focus();
+			}else if(phone == '' || phone == null){
+				alert("Enter Phone Number..");
+				$("#phone").focus();
+			}else if(address == '' || address == null){
+				alert("Enter Address..");
+				$("#address").focus();
+			}else if(gender == ''|| gender == null ){
+				alert("Select Gender..");
+				$("#gender").focus();
+			}else{
 				 $.ajax({
 					type: 'POST',
 					url: 'RegistrationSave.jsp',
@@ -73,30 +88,31 @@ input.ng-invalid {
 	<div class="form-group">
 		<label for="inputEmail" class="col-lg-2 control-label">LastName</label>
 		<div class="col-lg-10">
-			<input type="text" name="lname" class="form-control" id="lname" autofocus="autofocus">
+			<input type="text" name="lname" class="form-control" id="lname">
 		</div>
 	</div>
 	<div class="form-group">
 		<label for="inputPassword" class="col-lg-2 control-label">Password</label>
-		<div class="col-lg-10">	<input type="password" name="password" class="form-control"	id="password" autofocus="autofocus">
+		<div class="col-lg-10">	<input type="password" name="password" class="form-control"	id="password">
 		</div>
 	</div>
 	<div class="form-group">
 		<label for="inputEmail" class="col-lg-2 control-label">Email</label>
 		<div class="col-lg-10">
-			<input type="text" name="email" class="form-control" id="email" autofocus="autofocus">
+			<input type="text" name="email" class="form-control" id="email">
+			
 		</div>
 	</div>
 	<div class="form-group">
 		<label for="inputEmail" class="col-lg-2 control-label">Phone</label>
 		<div class="col-lg-10">
-			<input type="text" name="phone" class="form-control" id="phone" autofocus="autofocus">
+			<input type="text" name="phone" class="form-control" id="phone">
 		</div>
 	</div>
 	<div class="form-group">
 		<label for="textArea" class="col-lg-2 control-label">Address</label>
 		<div class="col-lg-10">
-			<textarea name="address" class="form-control" id="address"  autofocus="autofocus">	</textarea>
+			<textarea name="address" class="form-control" id="address" ></textarea>
 		</div>
 	</div>
 	<div class="form-group">

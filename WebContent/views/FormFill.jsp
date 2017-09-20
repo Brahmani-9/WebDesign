@@ -54,7 +54,7 @@ body { padding-top:30px; }
         <div class="form-group" data-ng-class="{ 'has-error' : userForm.name.$invalid && !userForm.name.$pristine }">
             <label>Name</label>
             <input type="text" name="name" class="form-control" data-ng-model="user.name" required>
-            <p data-ng-show="userForm.name.$invalid && !userForm.name.$pristine" class="help-block">You name is required.</p>
+            <p data-ng-show="userForm.name.$invalid && !userForm.name.$pristine" class="help-block">Your name is required.</p>
         </div>
       
         <!-- USERNAME -->
@@ -78,7 +78,7 @@ body { padding-top:30px; }
   </div>
   <div class="col-sm-6">
     <!-- VALIDATION TABLES ======== -->    
-    <div class="row">
+   <!--  <div class="row">
         <div class="col-xs-3">
             <h3>Form</h3>
             <table class="table table-bordered">
@@ -152,7 +152,7 @@ body { padding-top:30px; }
                 </tbody>
             </table>
         </div>
-    </div>
+    </div> -->
     
 </div>
 </div>
