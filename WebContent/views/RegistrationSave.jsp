@@ -1,8 +1,14 @@
 <%@ page import="dao.Registration"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
-<%@ page import="java.io.*,java.util.*"%>
+<%@ page import="java.io.*,java.util.*,javax.servlet.*"%>
+<html>
+<head>
+<title>Registration save</title>
+</head>
+<body>
 <%
 	Registration registration = new Registration();
+
 	String strfname = request.getParameter("fname");
 	System.out.println("strfname : " + strfname);
 	String strlname = request.getParameter("lname");
@@ -16,5 +22,6 @@
 	String strgender = request.getParameter("gender");
 	System.out.println("strgender : " + strgender);
 	registration.registrationSave(strfname,strlname,stremail,strphone,straddress,strgender);
-	out.println("Data added successfully");
 %>
+</body>
+</html>

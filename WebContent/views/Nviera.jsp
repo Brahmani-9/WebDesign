@@ -47,6 +47,8 @@
 							<a href="#services" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SERVICES</a>
 							<a href="#careers" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CAREERS</a>
 							<a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT US</a>
+							<a href="Login.jsp" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SIGN IN</a>
+							<a href="Registration.jsp" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SIGN UP</a>
 				</div>
 			</div>		
 	</nav>

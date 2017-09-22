@@ -6,7 +6,6 @@
 <script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script>
 <script type="text/javascript" src="../js/bootstrap.js"></script>
 <script type="text/javascript" src="../js/bootstrap.min.js"></script>
-
 <script	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 <script type="text/javascript" src="../js/angular.js"></script>
 <script type="text/javascript" src="../js/angular.min.js"></script>
@@ -43,13 +42,10 @@
 			}else if(address == '' || address == null){
 				alert("Enter Address..");
 				$("#address").focus();
-			}else if(gender == ''|| gender == null ){
-				alert("Select Gender..");
-				$("#gender").focus();
 			}else{
 				 $.ajax({
 					type: 'POST',
-					url: 'RegistrationSave.jsp',
+					url: '../../RegistrationSave.jsp',
 					data: dataString,
 					cache: false,
 					success: function(response){
@@ -74,45 +70,40 @@ input.ng-invalid {
 }
 </style>
 </head>
-<body data-ng-controller="myCtrl">
+<body data-ng-controller="myCtrl" background= "../img/apple.jpg">
 	<div class="container">
 	<form class="form-horizantal" id="myform">
 		<fieldset>
-			<legend>Fill Form</legend>
+			<legend>Registration Form</legend>
 		<div class="form-group">
-		<label for="inputEmail" class="col-md-2 control-label">FirstName</label>
 		<div class="col-md-6">
-			<input type="text" name="fname" class="form-control" id="fname" autofocus="autofocus">
+			<input type="text" name="fname" class="form-control" id="fname" autofocus="autofocus" placeholder="First Name">
 		</div>
 	</div>
 	<div class="form-group">
-		<label for="inputEmail" class="col-lg-2 control-label">LastName</label>
-		<div class="col-lg-10">
-			<input type="text" name="lname" class="form-control" id="lname">
+		<div class="col-lg-6">
+			<input type="text" name="lname" class="form-control" id="lname"  placeholder="Last Name">
 		</div>
 	</div>
 	<div class="form-group">
-		<label for="inputPassword" class="col-lg-2 control-label">Password</label>
-		<div class="col-lg-10">	<input type="password" name="password" class="form-control"	id="password">
+		<div class="col-lg-6">	<input type="password" name="password" class="form-control"	id="password" placeholder="Password">
 		</div>
 	</div>
 	<div class="form-group">
-		<label for="inputEmail" class="col-lg-2 control-label">Email</label>
-		<div class="col-lg-10">
-			<input type="text" name="email" class="form-control" id="email">
+<!-- 		<label for="inputEmail" class="col-lg-2 control-label">Email</label>
+ -->		<div class="col-lg-6">
+			<input type="text" name="email" class="form-control" id="email" placeholder="Email">
 			
 		</div>
 	</div>
 	<div class="form-group">
-		<label for="inputEmail" class="col-lg-2 control-label">Phone</label>
-		<div class="col-lg-10">
-			<input type="text" name="phone" class="form-control" id="phone">
+		<div class="col-lg-6">
+			<input type="text" name="phone" class="form-control" id="phone" placeholder="Mobile Number">
 		</div>
 	</div>
 	<div class="form-group">
-		<label for="textArea" class="col-lg-2 control-label">Address</label>
 		<div class="col-lg-10">
-			<textarea name="address" class="form-control" id="address" ></textarea>
+			<textarea name="address" class="form-control" id="address"  placeholder="Address"></textarea>
 		</div>
 	</div>
 	<div class="form-group">
@@ -122,16 +113,17 @@ input.ng-invalid {
 				<label><input type="radio" name="genders" id="genders" value="Male" checked>Male</label>
 			</div>
 			<div class="radio">
-				<label><input type="radio" name="genders" id="genders" value="Male" checked>Female </label>
+				<label><input type="radio" name="genders" id="genders" value="Female">Female </label>
 			</div>
-			<span id="msg">
-			<div class="form-group">
-			   <div class="col-lg-10 col-lg-offset-2">
+		</div>	
+			<div class="form-group" align="center">
+			   <div class="col-lg-10 col-lg-offset-2" >
+			   <span id="msg">
 				<button type="submit" id="submit" name="submit" class="btn btn-primary" >Submit</button>
-				<button type="reset" class="btn btn-default">Reset</button>
+				<button type="reset" class="btn btn-info">Reset</button></span>
 			</div>
-		</div></span>
 		</div>
+		
 	</div>
 	</fieldset></form>
 	</div>
