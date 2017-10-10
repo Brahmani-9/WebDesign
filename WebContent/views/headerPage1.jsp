@@ -14,16 +14,14 @@
 <script type="text/javascript"src="../javaScript/FormFieldValidation.js"></script>
 <style type="text/css">
 #well1 {
-	width: 100%;
-	height: 90px;
-	background-color: rgb(0, 0, 153); 
-	/* background-color: rgb(34, 34, 17); */
-	/* background-color: rgba(153,255,204,0.3); */
+	width: 98%;
+	height: 73px;
+	background-color: hsl(180, 100%, 20%); 
 	position: relative;
 	color: white;
-	top: 0px;
-	border-radius: 2px;
-	padding-bottom: 20px;
+	top: 10px;
+	border-radius: 12px;
+	margin-left: 15px;
 	box-shadow: 10px 10px 5px #888888;
 }
 
@@ -37,27 +35,15 @@
 }
 </style>
 </head>
-<%
-	int timeout = session.getMaxInactiveInterval();
-	response.setHeader("Refresh", timeout + "; URL = ../");
-%>
-<!-- <body style="background-color:rgb(240, 230, 255) rgb(212, 212, 170)"> -->
-<body style="background-color: white">
+
+<body style="background-color: #eae9db">
 	<form name="adminLogin">
 		<div>
 			<div id="well1">
-				<h5 id="headersize" align="center">Billing</h5>
-				<table>
-					<tr>
-						<td><label>Login Id :</label></td>
-						<td><label><font color="black"><%=session.getAttribute("UserSessionId")%></font></label></td>
-						<td><label>Login Name :</label></td>
-						<td><label><font color="black"><%=session.getAttribute("UserSessionName")%></font></label></td>
-						<td><label><a href="Logout.jsp"><button type="button" class="btn btn-default btn-sm" style="position:fixed;right: 50px;top: 30px"><span class="glyphicon glyphicon-log-out"></span> Logout</button></a></label> 
-					</tr>
-				</table>
+				<h5 id="headersize" align="center" style="font-family: cursive;">Nviera</h5><div class="container" align="right"><button formaction="Nviera.jsp" class="btn btn-info">Back</button></div>
 			</div>
 		</div>
 	</form>
+	
 </body>
 </html>

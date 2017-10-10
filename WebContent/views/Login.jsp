@@ -13,7 +13,7 @@
 <div class="login-form">
 	<div class="login-face"><img src="../img/login.png"></div>
 	<section class="form">
-		<form>
+		<form name="loginForm" id="loginForm" onsubmit="fnLoginValidation()">
 			<div class="input">
 				<label> User Name</label>
 				<input class="text-control" type="text" id="username" name="username" required>

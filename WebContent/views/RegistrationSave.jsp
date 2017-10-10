@@ -1,6 +1,8 @@
 <%@ page import="dao.Registration"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
-<%@ page import="java.io.*,java.util.*,javax.servlet.*"%>
+<%@ page import="java.io.*"%>
+<%@ page import="java.util.*"%>
+<%@ page import="javax.servlet.*"%>
 <html>
 <head>
 <title>Registration save</title>
@@ -8,7 +10,6 @@
 <body>
 <%
 	Registration registration = new Registration();
-
 	String strfname = request.getParameter("fname");
 	System.out.println("strfname : " + strfname);
 	String strlname = request.getParameter("lname");

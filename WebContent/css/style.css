@@ -1,3 +1,15 @@
+#boxWell{
+background: rgba(183,222,237,1);
+background: -moz-radial-gradient(center, ellipse cover, rgba(183,222,237,1) 0%, rgba(113,206,239,0.85) 40%, rgba(33,180,226,0.81) 51%, rgba(183,222,237,0.63) 100%);
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(183,222,237,1)), color-stop(40%, rgba(113,206,239,0.85)), color-stop(51%, rgba(33,180,226,0.81)), color-stop(100%, rgba(183,222,237,0.63)));
+background: -webkit-radial-gradient(center, ellipse cover, rgba(183,222,237,1) 0%, rgba(113,206,239,0.85) 40%, rgba(33,180,226,0.81) 51%, rgba(183,222,237,0.63) 100%);
+background: -o-radial-gradient(center, ellipse cover, rgba(183,222,237,1) 0%, rgba(113,206,239,0.85) 40%, rgba(33,180,226,0.81) 51%, rgba(183,222,237,0.63) 100%);
+background: -ms-radial-gradient(center, ellipse cover, rgba(183,222,237,1) 0%, rgba(113,206,239,0.85) 40%, rgba(33,180,226,0.81) 51%, rgba(183,222,237,0.63) 100%);
+background: radial-gradient(ellipse at center, rgba(183,222,237,1) 0%, rgba(113,206,239,0.85) 40%, rgba(33,180,226,0.81) 51%, rgba(183,222,237,0.63) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b7deed', endColorstr='#b7deed', GradientType=1 );
+border-radius: 10px 10px 10px 10px;
+}
+
 .section-header {
   margin-bottom: 50px;
 }
@@ -79,3 +91,57 @@ h1 {
 	padding-left: 400px;
 	font-family: 'Pacifico', cursive;
 }
+
+.back-text{
+	display: inline-block;
+	font-size: 95px;
+	font-weight: 900;
+	margin-left: 53px;
+	margin-top: 173px;
+	opacity: 0.1;
+	color: magenta;
+}
+
+.back-text1{
+	display: inline-block;
+	font-size: 65px;
+	font-weight: 900;
+	margin-left: 46px;
+	margin-top: -75px;
+	opacity: 1;
+	color: white;
+}
+
+.back-text2{
+	display: inline-block;
+	font-size: 14px;
+	font-weight: 900;
+	padding-right: 274px;
+	margin-top: 25px;
+	opacity: 1;
+	color: white;
+	float: right;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v13/UyBMtLsHKBKXelqf4x7VRQ.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v13/1YwB1sO8YE1Lyjf12WNiUA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+a:HOVER{
+	background: transparent;
+	border-top: 3px solid blue;
+}
+
+

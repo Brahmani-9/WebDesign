@@ -45,7 +45,7 @@
 			}else{
 				 $.ajax({
 					type: 'POST',
-					url: '../../RegistrationSave.jsp',
+					url: 'RegistrationSave.jsp',
 					data: dataString,
 					cache: false,
 					success: function(response){
@@ -68,49 +68,70 @@
 input.ng-invalid {
 	border: 1px solid red;
 }
+
+.registration-form{
+	width: 450px;
+	height: auto;
+	position: absolute;
+	padding: 10px 25px;
+	background: #eee;
+	left:50%;
+	top:50%;
+	transform: translateX(-50%) translateY(-50%);
+	border-bottom: 5px solid gray;
+	border-radius: 4px;
+	
+}
 </style>
 </head>
 <body data-ng-controller="myCtrl" background= "../img/apple.jpg">
-	<div class="container">
-	<form class="form-horizantal" id="myform">
-		<fieldset>
-			<legend>Registration Form</legend>
+	<div class="registration-form">
+		<div class="well">
+			<form class="form-horizantal" id="myform">
+		<h2 align="center">Registration Form</h2>
+		<hr style="border: 1px solid #ccc;">
 		<div class="form-group">
 		<div class="col-md-6">
-			<input type="text" name="fname" class="form-control" id="fname" autofocus="autofocus" placeholder="First Name">
+			<label>First Name</label>
+			<input type="text" name="fname" class="text-control" id="fname" autofocus="autofocus" placeholder="First Name">
 		</div>
 	</div>
 	<div class="form-group">
 		<div class="col-lg-6">
-			<input type="text" name="lname" class="form-control" id="lname"  placeholder="Last Name">
+			<label>Last Name</label>
+			<input type="text" name="lname" class="text-control" id="lname"  placeholder="Last Name">
 		</div>
 	</div>
 	<div class="form-group">
-		<div class="col-lg-6">	<input type="password" name="password" class="form-control"	id="password" placeholder="Password">
+		<div class="col-lg-6">
+			<label>Password</label>
+			<input type="password" name="password" class="text-control"	id="password" placeholder="Password">
 		</div>
 	</div>
 	<div class="form-group">
 <!-- 		<label for="inputEmail" class="col-lg-2 control-label">Email</label>
  -->		<div class="col-lg-6">
-			<input type="text" name="email" class="form-control" id="email" placeholder="Email">
+ 			<label>Email</label>
+			<input type="text" name="email" class="text-control" id="email" placeholder="Email">
 			
 		</div>
 	</div>
 	<div class="form-group">
 		<div class="col-lg-6">
-			<input type="text" name="phone" class="form-control" id="phone" placeholder="Mobile Number">
+		<label>Mobile Number</label>
+			<input type="text" name="phone" class="text-control" id="phone" placeholder="Mobile Number">
 		</div>
 	</div>
 	<div class="form-group">
 		<div class="col-lg-10">
-			<textarea name="address" class="form-control" id="address"  placeholder="Address"></textarea>
+			<textarea name="address" class="text-control" id="address"  placeholder="Address"></textarea>
 		</div>
 	</div>
 	<div class="form-group">
 		<label class="col-lg-2 control-label">Gender</label>
 		<div class="col-lg-10">
 			<div class="radio">
-				<label><input type="radio" name="genders" id="genders" value="Male" checked>Male</label>
+				<label><input type="radio" name="genders" id="genders" value="Male">Male</label>
 			</div>
 			<div class="radio">
 				<label><input type="radio" name="genders" id="genders" value="Female">Female </label>
@@ -123,9 +144,9 @@ input.ng-invalid {
 				<button type="reset" class="btn btn-info">Reset</button></span>
 			</div>
 		</div>
-		
+		</div>
 	</div>
-	</fieldset></form>
+	</fieldset></form></div>
 	</div>
 	<!--<div>
 	 <form name="frm">

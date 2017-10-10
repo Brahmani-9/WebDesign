@@ -1,0 +1,47 @@
+.toggle_menu{
+	position: fixed;
+	padding: 15px 20px 15px 15px;
+	margin-top: 20px;
+	color: white;
+	cursor: pointer;
+	background-color: purple;
+	z-index: 10000000;
+	font-size: 2em;
+	opacity: 0;
+}
+
+.sidebar_menu{
+	position: fixed;
+	width: 250px;
+	margin-left: 0px;
+	overflow: hidden;
+	height: 100vh;
+	max-height: 100vh;
+	background-color: rgba(17, 17, 17, 0.6);
+	opacity: 0.9;
+	transition: all o.3s ease-in-out;
+}
+
+.fa-times{
+	right: 10px;
+	top:10px;
+	opacity: 0.7;
+	cursor: pointer;
+	position: absolute;
+	color: white; 
+	transition: all o.3s ease-in-out;
+}
+
+.fa-times:hover{
+	opacity: 1;
+}
+
+.hide_menu{
+	margin-left: -250px;
+}
+
+
+.opacity_one{
+	opacity: 1;
+	transition: all o.3s ease-in-out;
+}
