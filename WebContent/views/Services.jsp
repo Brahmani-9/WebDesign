@@ -13,6 +13,7 @@
 <link rel="stylesheet" href="../css/bootstrap.min.css">
 </head>
 <body>
+<%@include file="../views/header.html"%>
 		<!-- SERVICES -->
 		<div id="services">
 			<div class="container"

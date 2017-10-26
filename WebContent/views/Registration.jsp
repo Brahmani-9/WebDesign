@@ -1,21 +1,10 @@
 <!doctype html>
 <html lang="en" data-ng-app="registration">
 <head>
-<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
 <title>Software Developer</title>
-<script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script>
-<script type="text/javascript" src="../js/bootstrap.js"></script>
-<script type="text/javascript" src="../js/bootstrap.min.js"></script>
-<script	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-<script type="text/javascript" src="../js/angular.js"></script>
-<script type="text/javascript" src="../js/angular.min.js"></script>
-<script type="text/javascript" src="../js/angular-cookies.js"></script>
-<script type="text/javascript" src="../js/angular-resource.js"></script>
-<script type="text/javascript" src="../js/angular-route.js"></script>
-<link rel="stylesheet" href="../css/bootstrap.css">
-<link rel="stylesheet" href="../css/bootstrap.min.css">
-<link rel="stylesheet" href="../css/w3.css">
-<link rel="stylesheet" href="../css/font-awesome.min.css">
+
+<%@include file="../views/header.html"%>
 <script type="text/javascript">
 	var app = angular.module("registration", []);
 	app.controller("myCtrl", function($scope) {
@@ -70,22 +59,25 @@ input.ng-invalid {
 }
 
 .registration-form{
-	width: 450px;
-	height: auto;
+
 	position: absolute;
-	padding: 10px 25px;
 	background: #eee;
-	left:50%;
-	top:50%;
-	transform: translateX(-50%) translateY(-50%);
 	border-bottom: 5px solid gray;
 	border-radius: 4px;
 	
 }
 </style>
 </head>
-<body data-ng-controller="myCtrl" background= "../img/apple.jpg">
+<body data-ng-controller="myCtrl">
+<!-- <script> 
+$(function(){
+$("#header").load("header.html"); 
+
+});
+</script>  -->
 	<div class="registration-form">
+	
+	
 		<div class="well">
 			<form class="form-horizantal" id="myform">
 		<h2 align="center">Registration Form</h2>

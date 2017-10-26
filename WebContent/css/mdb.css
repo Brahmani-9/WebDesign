@@ -1688,7 +1688,7 @@ a {
 }
 
 a:hover, a:focus {
-  border-top:1px solid blue;
+  border-top:2px solid yellow;
 }
 
 a:not([href]):not([tabindex]), a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {

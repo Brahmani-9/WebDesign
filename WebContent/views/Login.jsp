@@ -9,20 +9,21 @@
 <link rel="stylesheet" href="../css/login.css">
 </head>
 
-<body background= "../img/apple.jpg">
-<div class="login-form">
+<body>
+<%@include file="../views/header.html"%>
+<div class="login-form" >
 	<div class="login-face"><img src="../img/login.png"></div>
 	<section class="form">
 		<form name="loginForm" id="loginForm" onsubmit="fnLoginValidation()">
 			<div class="input">
 				<label> User Name</label>
 				<input class="text-control" type="text" id="username" name="username" required>
-				<i class="fa fa-user"></i>
+				<i class="fa fa-user" id="fas"></i>
 			</div>
 			<div class="input">
 				<label>Password</label>
 				<input type="password" id="password" name="password" required>
-				<i class="fa fa-lock"></i>
+				<i class="fa fa-lock" id="fas"></i>
 			</div>
 			<a href="#" style="float:right;color:gray;font-size:14px;">Forget Password?</a>
 			<div>

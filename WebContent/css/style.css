@@ -10,6 +10,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b7deed', end
 border-radius: 10px 10px 10px 10px;
 }
 
+#header{
+	position: fixed;
+	
+}
+
+
 .section-header {
   margin-bottom: 50px;
 }
@@ -98,8 +104,18 @@ h1 {
 	font-weight: 900;
 	margin-left: 53px;
 	margin-top: 173px;
-	opacity: 0.1;
+	opacity: 0.2;
 	color: magenta;
+}
+
+.foot-text{
+	display: inline-block;
+	font-size: 18px;
+	font-weight: 900;
+	margin-left: 92px;
+	margin-top: -4px;
+	opacity: 0.3;
+	color: #7a0537;
 }
 
 .back-text1{
@@ -107,7 +123,7 @@ h1 {
 	font-size: 65px;
 	font-weight: 900;
 	margin-left: 46px;
-	margin-top: -75px;
+	margin-top: -21px;
 	opacity: 1;
 	color: white;
 }
@@ -117,7 +133,7 @@ h1 {
 	font-size: 14px;
 	font-weight: 900;
 	padding-right: 274px;
-	margin-top: 25px;
+	margin-top: -10px;
 	opacity: 1;
 	color: white;
 	float: right;
@@ -139,9 +155,58 @@ h1 {
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
 
-a:HOVER{
-	background: transparent;
-	border-top: 3px solid blue;
+
+
+#lastcont{
+	background-color: #b0acac;;
+	 height: 400px;
+     width:100%;
+     margin-top: 450px;
+     border-radius: 5px 5px 5px 5px;"
 }
 
 
+ a.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 7px 5px;
+  border-radius: 40%;
+}
+
+a.fa:hover {
+    opacity: 0.7;
+    color: #ffffff;
+}
+
+a.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+a.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+a.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+a.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+a.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+a.fa-instagram {
+  background: #125688;
+  color: white;
+} 

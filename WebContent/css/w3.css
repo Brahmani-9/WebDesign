@@ -45,7 +45,8 @@ a {
 }
 
 a:active, a:hover {
-	outline-width: 0
+	outline-width: 0;
+	border-top: 3px solid blue;
 }
 
 abbr[title] {
@@ -334,7 +335,12 @@ a {
 
 .w3-button:hover {
 	color: #000 !important;
-	background-color: #ccc !important
+	background-color: rgba(255, 255, 204, 0.6) !important;
+	
+}
+
+#top-border:HOVER{
+border-top: 3px solid rgba(255, 165, 0, 0.8) !important;
 }
 
 .w3-btn, .w3-btn-floating, .w3-btn-floating-large, .w3-closenav,
@@ -822,18 +828,20 @@ input[type=checkbox].w3-check:disabled+.w3-validate, input[type=radio].w3-radio:
 	width: auto;
 	border: none;
 	outline: none;
-	display: block
+	display: block;
+	
 }
 
 .w3-bar .w3-dropdown-hover, .w3-bar .w3-dropdown-click {
 	position: static;
 	float: left
+	border-top: 3px solid blue;
 }
 
 .w3-bar .w3-button {
 	background-color: inherit;
 	color: inherit;
-	white-space: normal
+	white-space: normal;
 }
 
 .w3-bar-block .w3-bar-item {

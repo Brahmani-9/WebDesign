@@ -3,15 +3,12 @@
 <html>
 <head>
 <title>Nviera</title>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script>
-<script type="text/javascript" src="../js/bootstrap.js"></script>
-<script type="text/javascript" src="../js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="../css/bootstrap.css">
-<link rel="stylesheet" href="../css/bootstrap.min.css">
-<link rel="stylesheet" href="../css/products.css">
+
+<!-- <link rel="stylesheet" href="../css/products.css"> -->
 </head>
+<%@include file="../views/header.html"%>
 <body background="../img/apple.jpg">
+
 		<div class="container">
 			<div class="card" >
 				<div class="card-head">

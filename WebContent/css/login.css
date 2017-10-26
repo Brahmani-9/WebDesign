@@ -4,14 +4,14 @@ body{
 	
 }
 .login-form{
-	width: 250px;
+	width: 350px;
 	height: auto;
 	position: absolute;
 	padding: 10px 25px;
 	background: #eee;
 	left:50%;
 	top:50%;
-	transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(20%);
 	border-bottom: 5px solid gray;
 	border-radius: 4px;
 	
@@ -58,7 +58,7 @@ input[type="password"]{
 	font-family: sans-serif,Arial;
 }
 
-.fa{
+#fas{
 	position: absolute;
 	right:9px;
 	top:26px;

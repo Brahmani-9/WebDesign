@@ -4,16 +4,14 @@
 <html>
 <head>
 <title>Nviera</title>
-<%@include file="headerPage1.jsp"%>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script>
-<script type="text/javascript" src="../js/bootstrap.js"></script>
-<script type="text/javascript" src="../js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="../css/bootstrap.css">
-<link rel="stylesheet" href="../css/bootstrap.min.css">
+
 </head>
 <body>
+<%@include file="../views/header.html"%>
     <div class="container">
+    <div class="con2">
+    			<img src="../img/emp1.jpg" style="width:500px;height:400px; " class="img-thumbnail">
+    		</div>
     	<p STYLE="font-family: monospace arial;">NVIERA TECHNOLOGIES PRIVATE LIMITED IS A PRODUCT-BASED SOFTWARE COMPANY WITH ITS CORPORATE OFFICE IN BANGALORE, INDIA AND BRANCH OFFICE AT PUNE. THE COMPANY WAS INCORPORATED IN JULY 2016.</p>
     		<div class="con1" style="float:left;">
     			<p><br>
@@ -25,9 +23,7 @@
 
                     We aim to aid our customer's efforts to remain competitive & enhance their productivity. Our Credo for software quality, responsiveness, on-time delivery and commitment to our customers help us achieve the desired success.</p>
     		</div>
-    		<div class="con2" style="float:right;">
-    			<img src="../img/emp1.jpg" style="width:500px;height:400px; " class="img-thumbnail">
-    		</div>
+    		
 	    </div>
 	    </div>
 	<!-- End About us -->
